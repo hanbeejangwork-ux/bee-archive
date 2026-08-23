@@ -25,16 +25,16 @@ export const projects = [
     slug: 'chromatic-drift',
 
     // 프로젝트 제목
-    title: 'CHROMATIC DRIFT',
+    title: 'ABC UI LOOPING',
 
     // 카테고리 (예: "3D / MOTION")
     category: '3D / MOTION',
 
     // 제작 연도
-    year: '2026',
+    year: '2025',
 
     // 담당 역할
-    role: 'Direction, 3D, Motion',
+    role: '3D, Motion',
 
     // 사용 툴 목록
     tools: ['Cinema 4D', 'Redshift', 'After Effects'],
@@ -54,7 +54,7 @@ export const projects = [
 
     // 상세페이지에 들어가는 프로젝트 설명
     description:
-      'An ongoing study in fluid simulation and refracted light — translucent forms moving through a controlled studio environment, rendered frame by frame in Redshift.',
+      'A looping UI project reimagined through motion design in collaboration with real UI designers and team members.',
 
     // 상세페이지에 순서대로 나오는 콘텐츠 블록
     // type: 'image' 또는 'vimeo'
@@ -62,33 +62,40 @@ export const projects = [
     // 순서를 바꾸거나 블록을 추가/삭제하면 상세페이지 구성도 그대로 바뀝니다
     content: [
       { type: 'image', src: '/images/project-01-01.jpg', size: 'full' },
-      { type: 'image', src: '/images/project-01-02.jpg', size: 'medium' },
+      { type: 'image', src: '/images/project-01-02.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-01-03.jpg', size: 'full' },
+      
     ],
   },
   {
     id: '02',
     slug: 'surface-tension',
-    title: 'SURFACE TENSION',
-    category: 'MOTION / DIRECTION',
+    title: 'vermond',
+    category: 'MOTION / 3D',
     year: '2025',
     role: 'Motion Design',
-    tools: ['After Effects', 'Cinema 4D'],
+    tools: ['Cinema 4D', 'Redshift', 'After Effects'],
     archiveColor: '#3DA9FC',
     thumbnail: '/images/project-02-thumb.jpg',
     heroImage: '/images/project-02-hero.jpg',
     ratio: '4/3',
     description:
       'A short identity piece exploring tension between rigid typography and soft, elastic material behaviour.',
-    content: [{ type: 'image', src: '/images/project-02-01.jpg', size: 'full' }],
+    content: [ { type: 'image', src: '/images/project-02-01.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-02-02.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-02-03.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-02-04.jpg', size: 'full' },
+       
+    ],],
   },
   {
     id: '03',
     slug: 'object-permanence',
-    title: 'OBJECT PERMANENCE',
-    category: '3D / STILL',
+    title: 'Nice travel',
+    category: 'MOTION / 3D',
     year: '2025',
-    role: '3D, Art Direction',
-    tools: ['Cinema 4D', 'Redshift', 'Photoshop'],
+    role: '3D, Art Direction, motion',
+    tools: ['Cinema 4D', 'Redshift', 'After Effects'],
     archiveColor: '#B03A2E',
     thumbnail: '/images/project-03-thumb.jpg',
     heroImage: '/images/project-03-hero.jpg',
@@ -97,7 +104,12 @@ export const projects = [
       'A still-life series treating familiar objects as sculptural forms, isolated in flat studio light.',
     content: [
       { type: 'image', src: '/images/project-03-01.jpg', size: 'full' },
-      { type: 'image', src: '/images/project-03-02.jpg', size: 'medium' },
+      { type: 'image', src: '/images/project-03-02.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-03-03.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-03-04.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-03-05.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-03-06.jpg', size: 'full' },
+      { type: 'image', src: '/images/project-03-07.jpg', size: 'full' },
     ],
   },
   {
@@ -248,10 +260,9 @@ export const getProjectBySlug = (slug) => projects.find((p) => p.slug === slug)
 
 // 정렬된 프로젝트 목록을 반환합니다 ('newest' 또는 'oldest')
 export const getSortedProjects = (order = 'newest') => {
-  const sorted = [...projects].sort((a, b) => {
-    const yearDiff = order === 'newest' ? b.year - a.year : a.year - b.year
-    if (yearDiff !== 0) return yearDiff
-    return order === 'newest' ? Number(b.id) - Number(a.id) : Number(a.id) - Number(b.id)
-  })
-  return sorted
+  return [...projects].sort((a, b) =>
+    order === 'newest'
+      ? Number(a.id) - Number(b.id)
+      : Number(b.id) - Number(a.id)
+  )
 }
