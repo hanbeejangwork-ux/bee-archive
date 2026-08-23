@@ -11,6 +11,7 @@ export default function ProjectDetail() {
 
   const { id, title, category, year, role, tools, heroImage, description, content, ratio } =
     project
+  console.log(content)
 
   return (
     <article className="section project-detail">
