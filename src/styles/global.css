@@ -1107,7 +1107,7 @@ button {
   display: block;
 }
 
-/* SURFACE TENSION 상세페이지만 검정 배경 */
+/* SURFACE TENSION만 = 검정 */
 .project-detail--surface-tension {
   background: #000;
   color: #fff;
