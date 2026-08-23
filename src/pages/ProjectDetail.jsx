@@ -14,7 +14,7 @@ export default function ProjectDetail() {
   console.log(content)
 
   return (
-    <article className="section project-detail">
+    <article className={`section project-detail project-detail--${slug}`}>
       <header className="grid project-detail__header">
         <div className="col-desktop-8 col-mobile-4">
           <p className="project-detail__number">{id}</p>
