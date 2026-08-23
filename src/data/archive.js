@@ -45,9 +45,7 @@ export const archiveItems = [
 
     // 상세페이지 설명
     description:
-      'This is an AI-driven perfume branding project inspired by the form and movement of a snake.
-Its fluid curves, mysterious presence, and symbolic imagery were translated into the bottle design and visual identity.
-AI-generated visuals were used to create a sensual and enigmatic atmosphere throughout the brand.',
+       'This is an AI-driven perfume branding project inspired by the form and movement of a snake. Its fluid curves, mysterious presence, and symbolic imagery were translated into the bottle design and visual identity. AI-generated visuals were used to create a sensual and enigmatic atmosphere throughout the brand.',
 
     // 상세페이지에 순서대로 나오는 콘텐츠 블록 (선택 사항)
     // type: 'image' 또는 'vimeo', size: 'full' 또는 'medium'
@@ -67,8 +65,8 @@ AI-generated visuals were used to create a sensual and enigmatic atmosphere thro
     thumbnail: '/images/archive-02-thumb.jpg',
     heroImage: '/images/archive-02-hero.jpg',
     ratio: '3/4',
-    description: 'This is a brand film for LANEIGE, designed to capture a sense of freshness and hydration.
-Fluid visuals and refreshing imagery highlight the brand’s clean, moisture-rich identity.',
+    description:  'This is a brand film for LANEIGE, designed to capture a sense of freshness and hydration. Fluid visuals and refreshing imagery highlight the brand’s clean, moisture-rich identity.',
+
     content: [{ type: 'vimeo', url: 'https://player.vimeo.com/video/1141218867?badge=0&autopause=0&player_id=0&app_id=58479' }, 
               { type: 'image', src: '/images/archive-02-01.jpg', size: 'full' }, 
               { type: 'image', src: '/images/archive-02-02.jpg', size: 'full' }, 
@@ -84,8 +82,7 @@ Fluid visuals and refreshing imagery highlight the brand’s clean, moisture-ric
     thumbnail: '/images/archive-03-thumb.jpg',
     heroImage: '/images/archive-03-hero.jpg',
     ratio: '3/4',
-    description: 'This AI motion film for the Jeep Snow Edition embodies the purity of white and the vastness of snowy landscapes.
-The visuals capture the bold presence of Jeep within a pristine winter atmosphere.',
+    description: 'This AI motion film for the Jeep Snow Edition embodies the purity of white and the vastness of snowy landscapes. The visuals capture the bold presence of Jeep within a pristine winter atmosphere.',
     content: [{ type: 'vimeo', url: 'https://player.vimeo.com/video/1140890489?badge=0&autopause=0&player_id=0&app_id=58479' }, 
               { type: 'image', src: '/images/archive-03-01.jpg', size: 'full' }, 
               { type: 'image', src: '/images/archive-03-02.jpg', size: 'full' }, 
@@ -101,8 +98,7 @@ The visuals capture the bold presence of Jeep within a pristine winter atmospher
     thumbnail: '/images/archive-04-thumb.jpg',
     heroImage: '/images/archive-04-hero.jpg',
     ratio: '3/4',
-    description: 'This is a fictional character design that captures a vibrant and sporty personality.
-Dynamic visuals emphasize its energetic and playful identity.',
+    description: 'This is a fictional character design that captures a vibrant and sporty personality. Dynamic visuals emphasize its energetic and playful identity.',
     content: [{ type: 'image', src: '/images/archive-04-01.jpg', size: 'full' }, { type: 'image', src: '/images/archive-04-02.jpg', size: 'full' }, { type: 'image', src: '/images/archive-04-03.jpg', size: 'full' }],
   },
   {
