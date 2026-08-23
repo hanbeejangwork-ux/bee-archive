@@ -19,20 +19,20 @@ export const archiveItems = [
     id: '01',
 
     // 상세페이지 주소에 쓰이는 영문 slug (예: /archive/tools-for-slowing-down)
-    slug: 'chromatic-drift',
+    slug: 'OURO',
 
     // 작업 제목
-    title: 'CHROMATIC DRIFT',
+    title: 'OURO',
 
     // 카테고리
-    category: '3D / MOTION',
+    category: 'AI / Branding',
 
     // 연도
     year: '2026',
 
     // ARCHIVE 그리드에서 마우스를 올렸을 때 나오는 배경색
     // 이 값만 바꾸면 해당 항목의 hover 색이 바뀝니다
-    archiveColor: '#C9C2AE',
+    archiveColor: '##9EC8D8',
 
     // ARCHIVE 그리드 썸네일
     thumbnail: '/images/archive-01-thumb.jpg',
@@ -45,50 +45,65 @@ export const archiveItems = [
 
     // 상세페이지 설명
     description:
-      'An ongoing study in fluid simulation and refracted light — translucent forms moving through a controlled studio environment.',
+      'This is an AI-driven perfume branding project inspired by the form and movement of a snake.
+Its fluid curves, mysterious presence, and symbolic imagery were translated into the bottle design and visual identity.
+AI-generated visuals were used to create a sensual and enigmatic atmosphere throughout the brand.',
 
     // 상세페이지에 순서대로 나오는 콘텐츠 블록 (선택 사항)
     // type: 'image' 또는 'vimeo', size: 'full' 또는 'medium'
-    content: [{ type: 'image', src: '/images/archive-01-01.jpg', size: 'full' }],
+    content: [{ type: 'image', src: '/images/archive-01-01.jpg', size: 'full' },
+              { type: 'image', src: '/images/archive-01-02.jpg', size: 'full' },
+              { type: 'image', src: '/images/archive-01-03.jpg', size: 'full' }, 
+              { type: 'image', src: '/images/archive-01-04.jpg', size: 'full' }, 
+              { type: 'image', src: '/images/archive-01-05.jpg', size: 'full' },],
   },
   {
     id: '02',
-    slug: 'surface-tension',
-    title: 'SURFACE TENSION',
-    category: 'MOTION',
-    year: '2025',
+    slug: 'laneige',
+    title: 'laneige',
+    category: 'MOTION','3D'
+    year: '2024',
     archiveColor: '#3DA9FC',
     thumbnail: '/images/archive-02-thumb.jpg',
     heroImage: '/images/archive-02-hero.jpg',
     ratio: '3/4',
-    description: 'A short personal study exploring tension between typography and material.',
-    content: [{ type: 'image', src: '/images/archive-02-01.jpg', size: 'full' }],
+    description: 'This is a brand film for LANEIGE, designed to capture a sense of freshness and hydration.
+Fluid visuals and refreshing imagery highlight the brand’s clean, moisture-rich identity.',
+    content: [{ type: 'vimeo', url: 'https://player.vimeo.com/video/1141218867?badge=0&autopause=0&player_id=0&app_id=58479' }, 
+              { type: 'image', src: '/images/archive-02-01.jpg', size: 'full' }, 
+              { type: 'image', src: '/images/archive-02-02.jpg', size: 'full' }, 
+              { type: 'image', src: '/images/archive-02-03.jpg', size: 'full' }],
   },
   {
     id: '03',
-    slug: 'object-permanence',
-    title: 'OBJECT PERMANENCE',
-    category: '3D / STILL',
+    slug: 'JEEP',
+    title: 'JEEP',
+    category: 'AI / MOTION',
     year: '2025',
     archiveColor: '#B03A2E',
     thumbnail: '/images/archive-03-thumb.jpg',
     heroImage: '/images/archive-03-hero.jpg',
     ratio: '3/4',
-    description: 'A still-life series treating familiar objects as sculptural forms.',
-    content: [{ type: 'image', src: '/images/archive-03-01.jpg', size: 'full' }],
+    description: 'This AI motion film for the Jeep Snow Edition embodies the purity of white and the vastness of snowy landscapes.
+The visuals capture the bold presence of Jeep within a pristine winter atmosphere.',
+    content: [{ type: 'vimeo', url: 'https://player.vimeo.com/video/1140890489?badge=0&autopause=0&player_id=0&app_id=58479' }, 
+              { type: 'image', src: '/images/archive-03-01.jpg', size: 'full' }, 
+              { type: 'image', src: '/images/archive-03-02.jpg', size: 'full' }, 
+              { type: 'image', src: '/images/archive-03-03.jpg', size: 'full' }],
   },
   {
     id: '04',
-    slug: 'low-orbit',
-    title: 'LOW ORBIT',
-    category: 'MOTION',
-    year: '2024',
+    slug: 'ROLLWITH',
+    title: 'ROLLWITH',
+    category: '3D','Branding'
+    year: '2025',
     archiveColor: '#7C9C78',
     thumbnail: '/images/archive-04-thumb.jpg',
     heroImage: '/images/archive-04-hero.jpg',
     ratio: '3/4',
-    description: 'A personal motion study built around orbital paths and atmospheric depth.',
-    content: [{ type: 'image', src: '/images/archive-04-01.jpg', size: 'full' }],
+    description: 'This is a fictional character design that captures a vibrant and sporty personality.
+Dynamic visuals emphasize its energetic and playful identity.',
+    content: [{ type: 'image', src: '/images/archive-04-01.jpg', size: 'full' }, { type: 'image', src: '/images/archive-04-02.jpg', size: 'full' }, { type: 'image', src: '/images/archive-04-03.jpg', size: 'full' }],
   },
   {
     id: '05',
