@@ -1087,3 +1087,22 @@ button {
   object-position: center !important;
   display: block;
 }
+
+/* PROJECT DETAIL CONTENT — 본문 이미지도 원본 비율 그대로 표시 */
+.project-detail__block .image-frame {
+  aspect-ratio: unset !important;
+  width: 100%;
+  height: auto !important;
+  overflow: visible !important;
+  background: transparent;
+}
+
+.project-detail__block .image-frame img {
+  position: static !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block;
+}
