@@ -1069,16 +1069,21 @@ button {
   }
 }
 
+/* PROJECT DETAIL HERO — 원본 비율 그대로 표시 */
 .project-detail__hero .image-frame {
-  height: auto;
-  aspect-ratio: auto !important;
-  overflow: visible;
+  aspect-ratio: unset !important;
+  width: 100%;
+  height: auto !important;
+  overflow: visible !important;
   background: transparent;
 }
 
 .project-detail__hero .image-frame img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  position: static !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  object-fit: contain !important;
+  object-position: center !important;
   display: block;
 }
