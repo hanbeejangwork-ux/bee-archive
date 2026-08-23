@@ -64,8 +64,7 @@ export const projects = [
       { type: 'image', src: '/images/project-01-01.jpg', size: 'full' },
       { type: 'image', src: '/images/project-01-02.jpg', size: 'full' },
       { type: 'image', src: '/images/project-01-03.jpg', size: 'full' },
-      
-    ],
+       ],
   },
   {
     id: '02',
@@ -85,8 +84,7 @@ export const projects = [
       { type: 'image', src: '/images/project-02-02.jpg', size: 'full' },
       { type: 'image', src: '/images/project-02-03.jpg', size: 'full' },
       { type: 'image', src: '/images/project-02-04.jpg', size: 'full' },
-       
-    ],],
+        ],
   },
   {
     id: '03',
