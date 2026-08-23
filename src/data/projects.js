@@ -62,6 +62,7 @@ export const projects = [
     // 순서를 바꾸거나 블록을 추가/삭제하면 상세페이지 구성도 그대로 바뀝니다
     content: [
       { type: 'image', src: '/images/project-01-01.jpg', size: 'full' },
+      { type: 'vimeo', url: 'https://player.vimeo.com/video/1106134318?badge=0&autopause=0&player_id=0&app_id=58479' }, 
       { type: 'image', src: '/images/project-01-02.jpg', size: 'full' },
       { type: 'image', src: '/images/project-01-03.jpg', size: 'full' },
        ],
@@ -81,6 +82,7 @@ export const projects = [
     description:
       'A short identity piece exploring tension between rigid typography and soft, elastic material behaviour.',
     content: [ { type: 'image', src: '/images/project-02-01.jpg', size: 'full' },
+              { type: 'vimeo', url: 'https://player.vimeo.com/video/1139855849?badge=0&autopause=0&player_id=0&app_id=58479' },
       { type: 'image', src: '/images/project-02-02.jpg', size: 'full' },
       { type: 'image', src: '/images/project-02-03.jpg', size: 'full' },
       { type: 'image', src: '/images/project-02-04.jpg', size: 'full' },
@@ -101,6 +103,7 @@ export const projects = [
     description:
       'A still-life series treating familiar objects as sculptural forms, isolated in flat studio light.',
     content: [
+      { type: 'vimeo', url: 'https://player.vimeo.com/video/1148314478?badge=0&autopause=0&player_id=0&app_id=58479' },
       { type: 'image', src: '/images/project-03-01.jpg', size: 'full' },
       { type: 'image', src: '/images/project-03-02.jpg', size: 'full' },
       { type: 'image', src: '/images/project-03-03.jpg', size: 'full' },
