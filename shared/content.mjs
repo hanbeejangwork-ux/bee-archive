@@ -55,3 +55,24 @@ export function embedUrl(value) {
   } catch {return null}
 }
 export function isEmbed(value) {return !!embedUrl(value)}
+
+// A player must identify the page embedding it, including inside Studio/WebViews.
+export function playerUrl(value, pageOrigin) {
+  const url = embedUrl(value)
+  if (!url) return null
+  const player = new URL(url)
+  if (player.hostname === 'www.youtube-nocookie.com' && pageOrigin) {
+    try {
+      const page = new URL(pageOrigin)
+      if (['https:', 'http:'].includes(page.protocol)) player.searchParams.set('origin', page.origin)
+    } catch {}
+  }
+  return player.href
+}
+export function videoPageUrl(value) {
+  const url = embedUrl(value)
+  if (!url) return null
+  const player = new URL(url)
+  if (player.hostname === 'www.youtube-nocookie.com') return `https://www.youtube.com/watch?v=${player.pathname.split('/').pop()}`
+  return `https://vimeo.com/${player.pathname.split('/').pop()}${player.searchParams.get('h')?'/'+encodeURIComponent(player.searchParams.get('h')):''}`
+}
