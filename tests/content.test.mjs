@@ -33,3 +33,22 @@ test('이미 계정에 있는 관리 화면의 문서 형식을 읽음',()=>{
  const result=normalize({...baseline,projects:[item]}).projects[0]
  assert.equal(result.slug,'existing-project');assert.ok(result.thumbnail.endsWith('cover.jpg'));assert.equal(result.content[0].type,'vimeo');assert.ok(result.content[1].src.endsWith('block.jpg'))
 })
+test('드래그 정렬 문서의 순서와 새 작업의 후순위 유지',()=>{
+ const last=baseline.projects.at(-1)
+ const data=normalize({...baseline,order:{work:[last.slug]}})
+ assert.equal(data.projects[0].slug,last.slug)
+ assert.equal(data.projects[1].slug,baseline.projects[0].slug)
+})
+test('썸네일 영상 형식과 숨겨진 예전 파일을 구분',()=>{
+ const item={...baseline.projects[0],thumbnailType:'video',thumbnailVideo:{asset:{url:'https://cdn.sanity.io/files/p/production/loop.mp4'}},content:[{_type:'portfolioBlock',type:'image',video:{asset:{url:'https://cdn.sanity.io/files/p/production/old.mp4'}},image:{asset:{url:'https://cdn.sanity.io/images/p/production/current.jpg'}}}]}
+ const result=normalize({...baseline,projects:[item]}).projects[0]
+ assert.ok(result.thumbnail.endsWith('loop.mp4'));assert.ok(result.content[0].src.endsWith('current.jpg'))
+})
+test('유튜브 일반 주소·공유·쇼츠 링크를 영상으로 변환',async()=>{
+ const {embedUrl}=await import('../shared/content.mjs')
+ assert.equal(embedUrl('https://youtu.be/dQw4w9WgXcQ?si=abc'),'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ')
+ assert.equal(embedUrl('https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1m30s'),'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?start=90')
+ assert.equal(embedUrl('https://youtube.com/shorts/dQw4w9WgXcQ'),'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ')
+ assert.equal(embedUrl('https://youtube.com.evil.test/watch?v=dQw4w9WgXcQ'),null)
+ assert.equal(embedUrl('https://vimeo.com/1106134318'),'https://player.vimeo.com/video/1106134318')
+})
