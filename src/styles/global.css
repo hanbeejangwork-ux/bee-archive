@@ -1112,3 +1112,6 @@ button {
   background: #000;
   color: #fff;
 }
+
+/* Uploaded motion can retain its original height in a project story. */
+.project-detail__block .image-frame.image-frame--natural video { height: auto !important; object-fit: contain; }
