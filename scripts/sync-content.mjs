@@ -9,10 +9,10 @@ if (!project) { console.log('CMS 미연결: 저장소의 기존 콘텐츠로 빌
 if (!/^[a-z0-9]+$/.test(project) || !/^[\w-]+$/.test(dataset)) throw Error('CMS 설정을 확인해주세요. 기존 배포는 유지됩니다.')
 const mediaProjection = `...,image{asset->},video{asset->}`
 const singletonItem = `...,cover{${mediaProjection}},hero{${mediaProjection}},content[]{...,media{${mediaProjection}}}`
-const existingItem = `...,thumbnailImage{asset->},heroImageAsset{asset->},content[]{...,image{asset->},video{asset->}}`
+const existingItem = `...,thumbnailImage{asset->},thumbnailVideo{asset->},heroImageAsset{asset->},heroVideo{asset->},content[]{...,image{asset->},video{asset->}}`
 const query = (process.env.SANITY_DOCUMENT_MODE || config.documentMode) === 'singleton'
  ? `*[_id == "${DOCUMENT_ID}"][0]{...,siteInfo{...,hero{${mediaProjection}},aboutHero{${mediaProjection}}},projects[]{${singletonItem}},archiveItems[]{${singletonItem}}}`
- : `{"siteInfo": *[_type == "siteSettings"][0]{...,heroImageAsset{asset->},aboutHeroImageAsset{asset->}},"projects": (*[_type == "project"] | order(sortOrder asc, id asc))[]{${existingItem}},"archiveItems": (*[_type == "archiveItem"] | order(sortOrder asc, id asc))[]{${existingItem}}}`
+ : `{"order": *[_id == "portfolio-order"][0],"siteInfo": *[_type == "siteSettings"][0]{...,heroImageAsset{asset->},aboutHeroImageAsset{asset->}},"projects": (*[_type == "project"] | order(sortOrder asc, id asc))[]{${existingItem}},"archiveItems": (*[_type == "archiveItem"] | order(sortOrder asc, id asc))[]{${existingItem}}}`
 
 const response = await fetch(`https://${project}.api.sanity.io/v2025-02-19/data/query/${dataset}?perspective=published&query=${encodeURIComponent(query)}`, {headers:token ? {Authorization:`Bearer ${token}`} : {},signal:AbortSignal.timeout(30000)})
 if (!response.ok) {const detail = await response.json().catch(()=>({})); throw Error(`CMS 읽기 실패 (${response.status}): ${detail.error?.description || "연결 실패"}. 기존 배포는 유지됩니다.`)}
