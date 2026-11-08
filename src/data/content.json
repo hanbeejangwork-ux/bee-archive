@@ -1,0 +1,804 @@
+{
+  "siteInfo": {
+    "_createdAt": "2026-10-30T07:57:09Z",
+    "_id": "siteSettings",
+    "_rev": "fjzGvwbz2L8HH1zReaJfIe",
+    "_type": "siteSettings",
+    "_updatedAt": "2026-10-30T08:03:13Z",
+    "aboutBody": "Hanbee Jang is an independent motion designer working across 3D, moving image and visual experimentation — building work for brands, directors and personal study in equal measure.",
+    "aboutHeroImageAsset": null,
+    "aboutTitle": "ABOUT",
+    "behance": "https://behance.net/",
+    "email": "hello@hanbeejang.com",
+    "heroImageAsset": null,
+    "homeDescription": "Independent motion designer working across 3D, moving image and visual experimentation.",
+    "homeIntro": "MOTION DESIGNER\nWORKING ACROSS\n3D, IMAGE AND MOTION.",
+    "instagram": "https://instagram.com/",
+    "legacyAboutHeroImage": "/images/about-hero.jpg",
+    "legacyHeroImage": "/images/home-hero.jpg",
+    "name": "HANBEE JANG",
+    "navigation": {
+      "home": "HOME",
+      "work": "WORK",
+      "archive": "ARCHIVE"
+    },
+    "heroImage": "/images/home-hero.jpg",
+    "aboutHeroImage": "/images/about-hero.jpg"
+  },
+  "projects": [
+    {
+      "id": "01",
+      "slug": "chromatic-drift",
+      "title": "ABC UI LOOPING",
+      "category": "3D / MOTION",
+      "year": "2025",
+      "role": "3D, Motion",
+      "tools": [
+        "Cinema 4D",
+        "Redshift",
+        "After Effects"
+      ],
+      "archiveColor": "#C9C2AE",
+      "thumbnail": "/cms/17db3b1844773f2089206e6282aa78db6f8c28a046fea4440ba4141118fea106.jpg",
+      "heroImage": "/cms/17db3b1844773f2089206e6282aa78db6f8c28a046fea4440ba4141118fea106.jpg",
+      "ratio": "16/9",
+      "description": "A looping UI project reimagined through motion design in collaboration with real UI designers and team members.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/cms/2e668afafd0235ee8dc3babda7e4d8d0e664ffd5e945b67ae2cd170ea91c5061.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "vimeo",
+          "url": "https://player.vimeo.com/video/1106134318?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          "type": "image",
+          "src": "/cms/a4a207aee4fee1bbaee81f930b0aabb9303afc858aa24523ce30cc67cf508298.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/4e2b9fdf53c149241964de58fb12a99fe689b03b960b816ba318142ce33b4a57.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "slug": "surface-tension",
+      "title": "vermond",
+      "category": "MOTION / 3D",
+      "year": "2025",
+      "role": "Motion Design",
+      "tools": [
+        "Cinema 4D",
+        "Redshift",
+        "After Effects"
+      ],
+      "archiveColor": "#3DA9FC",
+      "thumbnail": "/cms/c5cad7c0788c39237b07a6c7e023d39cbad8fe7e358742ac7e0397bc446e315d.jpg",
+      "heroImage": "/cms/c5cad7c0788c39237b07a6c7e023d39cbad8fe7e358742ac7e0397bc446e315d.jpg",
+      "ratio": "4/3",
+      "description": "A short identity piece exploring tension between rigid typography and soft, elastic material behaviour.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/cms/feef6c9b0de008f786b0ff4934367ee95c0bc396a069629cadd074f8c4d62040.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "vimeo",
+          "url": "https://player.vimeo.com/video/1139855849?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          "type": "image",
+          "src": "/cms/1ecbacc7fa6f3ee0078034db3bf616c378aa866ab21d71284b068a3c8051cf9a.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/27095cbdf215dffc9803af26f78ac124a0214971fa031566e2c5e8f33eeb03b9.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/a148ebdcbdfa036de8cdc10279c41573d7dd3908ca8f1aa4dd4fff1513a500a5.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "slug": "object-permanence",
+      "title": "Nice travel",
+      "category": "MOTION / 3D",
+      "year": "2025",
+      "role": "3D, Art Direction, motion",
+      "tools": [
+        "Cinema 4D",
+        "Redshift",
+        "After Effects"
+      ],
+      "archiveColor": "#B03A2E",
+      "thumbnail": "/cms/080eae3494ebb20c301b58925e12c8d033ae50e541e1cf695d721c158bc252be.jpg",
+      "heroImage": "/cms/080eae3494ebb20c301b58925e12c8d033ae50e541e1cf695d721c158bc252be.jpg",
+      "ratio": "3/4",
+      "description": "A still-life series treating familiar objects as sculptural forms, isolated in flat studio light.",
+      "content": [
+        {
+          "type": "vimeo",
+          "url": "https://player.vimeo.com/video/1148314478?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          "type": "image",
+          "src": "/cms/da53c22b6a55bbaa789956b770ddab578a0f195dd7275d64604cb758ba27daca.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/4ba8762f8f547c71ce5a7bb8e7568171f203a8274c345c37518a4ec6cadd86f5.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/3f45a7d6c1677de047e83190d597a460c12ec27a02fd49cf6414e9b699de0040.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/5aee681e433e00ec435be7a1360d44320b74aca0bee3c019a1fa8605019421d1.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/73d30d8a37dca5560197477f9e38ec6390da29ff5c259b3f106856d4292af7f8.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/1a6f5228d893926e33fed45a7416a9f1464020ef99208dfd4ffbd4918a0ac3bf.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/6b9ae35608e225c8dc19fa501030b3f46855716aac258f2c2b3eea481e746935.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "slug": "low-orbit",
+      "title": "LOW ORBIT",
+      "category": "MOTION / 3D",
+      "year": "2024",
+      "role": "Direction, Motion, 3D",
+      "tools": [
+        "Cinema 4D",
+        "After Effects",
+        "Premiere Pro"
+      ],
+      "archiveColor": "#7C9C78",
+      "thumbnail": "/cms/19765ec5c65519116b552bcec2eacac688526ff7e004d764dcd0ad1841e33ad1.jpg",
+      "heroImage": "/cms/62bb59b0d88d2326837c392b61f2c2650b8d23f116e1b8a4a6a0ee97448e82b4.jpg",
+      "ratio": "16/9",
+      "description": "A title sequence built around orbital motion paths and layered atmospheric depth.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-04-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "quiet-machine",
+      "title": "QUIET MACHINE",
+      "category": "3D / MOTION",
+      "year": "2024",
+      "role": "3D, Motion Design",
+      "tools": [
+        "Cinema 4D",
+        "Redshift",
+        "Higgsfield"
+      ],
+      "archiveColor": "#8C7BA5",
+      "thumbnail": "/images/project-05-thumb.jpg",
+      "heroImage": "/images/project-05-hero.jpg",
+      "ratio": "4/5",
+      "description": "Mechanical forms rendered without narrative — an exercise in restraint, material and silence.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-05-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/images/project-05-02.jpg",
+          "size": "medium",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "field-notes",
+      "title": "FIELD NOTES",
+      "category": "MOTION / EXPERIMENT",
+      "year": "2023",
+      "role": "Motion Design",
+      "tools": [
+        "After Effects",
+        "Photoshop"
+      ],
+      "archiveColor": "#D9C6E0",
+      "thumbnail": "/images/project-06-thumb.jpg",
+      "heroImage": "/images/project-06-hero.jpg",
+      "ratio": "1/1",
+      "description": "A set of daily motion studies made without a client brief — texture, timing and type as the only subject.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-06-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "slug": "afterimage",
+      "title": "AFTERIMAGE",
+      "category": "MOTION / 3D",
+      "year": "2023",
+      "role": "Motion Design, 3D",
+      "tools": [
+        "Cinema 4D",
+        "After Effects"
+      ],
+      "archiveColor": "#FF5B35",
+      "thumbnail": "/images/project-07-thumb.jpg",
+      "heroImage": "/images/project-07-hero.jpg",
+      "ratio": "4/3",
+      "description": "Layered afterimages of motion-captured gesture, rebuilt as translucent 3D geometry.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-07-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "still-frame",
+      "title": "STILL FRAME",
+      "category": "3D / STILL",
+      "year": "2023",
+      "role": "3D, Art Direction",
+      "tools": [
+        "Cinema 4D",
+        "Redshift"
+      ],
+      "archiveColor": "#2E8B67",
+      "thumbnail": "/images/project-08-thumb.jpg",
+      "heroImage": "/images/project-08-hero.jpg",
+      "ratio": "4/3",
+      "description": "A single-frame study of light falling across matte and reflective surfaces.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-08-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "slug": "signal-noise",
+      "title": "SIGNAL / NOISE",
+      "category": "MOTION / EXPERIMENT",
+      "year": "2022",
+      "role": "Motion Design",
+      "tools": [
+        "After Effects",
+        "Premiere Pro"
+      ],
+      "archiveColor": "#E0C64D",
+      "thumbnail": "/images/project-09-thumb.jpg",
+      "heroImage": "/images/project-09-hero.jpg",
+      "ratio": "4/3",
+      "description": "Broadcast-signal artifacts treated as raw material for abstract motion.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-09-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "material-study",
+      "title": "MATERIAL STUDY",
+      "category": "3D / MOTION",
+      "year": "2022",
+      "role": "3D, Motion Design",
+      "tools": [
+        "Cinema 4D",
+        "Redshift"
+      ],
+      "archiveColor": "#4D6B99",
+      "thumbnail": "/images/project-10-thumb.jpg",
+      "heroImage": "/images/project-10-hero.jpg",
+      "ratio": "4/3",
+      "description": "Cloth, liquid and glass simulations run side by side as a material vocabulary.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-10-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "slug": "counterweight",
+      "title": "COUNTERWEIGHT",
+      "category": "MOTION / DIRECTION",
+      "year": "2023",
+      "role": "Direction, Motion",
+      "tools": [
+        "Cinema 4D",
+        "After Effects"
+      ],
+      "archiveColor": "#C4D93D",
+      "thumbnail": "/images/project-11-thumb.jpg",
+      "heroImage": "/images/project-11-hero.jpg",
+      "ratio": "4/3",
+      "description": "A brand film built around balance, tension and the moment before release.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-11-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "slug": "index-01",
+      "title": "INDEX 01",
+      "category": "3D / STILL",
+      "year": "2022",
+      "role": "3D, Art Direction",
+      "tools": [
+        "Cinema 4D",
+        "Photoshop"
+      ],
+      "archiveColor": "#A65D8E",
+      "thumbnail": "/images/project-12-thumb.jpg",
+      "heroImage": "/images/project-12-hero.jpg",
+      "ratio": "4/3",
+      "description": "The first entry in an ongoing archive of unreleased still-life renders.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/project-12-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    }
+  ],
+  "archiveItems": [
+    {
+      "id": "01",
+      "slug": "chromatic-drift",
+      "title": "CHROMATIC DRIFT",
+      "category": "AI / Branding",
+      "year": "2026",
+      "tools": [],
+      "archiveColor": "#9EC8D8",
+      "thumbnail": "/cms/160a0938afc68001178537b0beb3200b1f88572cf57b1b0cb4e5fb7315163bc6.jpg",
+      "heroImage": "/cms/a2076e368ade9fdcb543444c984d17b059b075dfde4232ced4cc42633a10e921.jpg",
+      "ratio": "3/4",
+      "description": "This is an AI-driven perfume branding project inspired by the form and movement of a snake. Its fluid curves, mysterious presence, and symbolic imagery were translated into the bottle design and visual identity. AI-generated visuals were used to create a sensual and enigmatic atmosphere throughout the brand.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/cms/ba3027bed866a7b67e34052dd40af759975a1ca860bfe8e39175ecd8f43545cf.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/ee5cd1be979af839abbfe90a4beb1a62df7486911fd469e9506e116f9a5a32bc.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/5d910225860e31c0bb230ebf39e97e5e1f5e7f539452ca4555278bd66f709815.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/78918cacce5f12160d85c5f39936e6ae25f81e7158e0e02ff106a3422571280e.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/442ac46e8ac9c8f5b99fd787723b4493089580f319bded08b4011cca5ad2aab8.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "slug": "laneige",
+      "title": "LANEIGE",
+      "category": "MOTION / 3D",
+      "year": "2024",
+      "tools": [],
+      "archiveColor": "#3DA9FC",
+      "thumbnail": "/cms/eabb7133c927ded36b88d77496dcdd2cdaa7a0eb468220faa66020cd627f11bb.jpg",
+      "heroImage": "/cms/b3abc8611163597aeb04a4101f22a3207d93cb7170d743a138b06d35c9d99a28.jpg",
+      "ratio": "3/4",
+      "description": "This is a brand film for LANEIGE, designed to capture a sense of freshness and hydration. Fluid visuals and refreshing imagery highlight the brand’s clean, moisture-rich identity.",
+      "content": [
+        {
+          "type": "vimeo",
+          "url": "https://player.vimeo.com/video/1141218867?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          "type": "image",
+          "src": "/cms/f24f5e2bd100431bd340840f76688b82961bf58cc794bbbcf82d233a3f3f2a1f.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/bd44ab66bcde24ccd99b6b3b99fe882a39b0ab0c302a326001f183725dcc47df.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/6408b4c6d247502cedf4d2e4c58f8c2377119de550a921348c25cfad81c5bc38.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "slug": "surface-tension",
+      "title": "SURFACE TENSION",
+      "category": "MOTION",
+      "year": "2025",
+      "tools": [],
+      "archiveColor": "#3DA9FC",
+      "thumbnail": "/images/archive-02-thumb.jpg",
+      "heroImage": "/images/archive-02-hero.jpg",
+      "ratio": "3/4",
+      "description": "A short personal study exploring tension between typography and material.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-02-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "slug": "jeep",
+      "title": "JEEP",
+      "category": "AI / MOTION",
+      "year": "2025",
+      "tools": [],
+      "archiveColor": "#B03A2E",
+      "thumbnail": "/cms/69a710acf0b88ab8970e489167e1ac25c54176de346b8632e58570372cf25683.jpg",
+      "heroImage": "/cms/4b7f6e9b7662171c69adb9225eda6127b9c6d3125df414052e35450bbd196b19.jpg",
+      "ratio": "3/4",
+      "description": "This AI motion film for the Jeep Snow Edition embodies the purity of white and the vastness of snowy landscapes. The visuals capture the bold presence of Jeep within a pristine winter atmosphere.",
+      "content": [
+        {
+          "type": "vimeo",
+          "url": "https://player.vimeo.com/video/1140890489?badge=0&autopause=0&player_id=0&app_id=58479"
+        },
+        {
+          "type": "image",
+          "src": "/cms/93175b80eb1cff630f9b688ac9037790528b701939602b77455e124a1743d2e1.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/48a8d477c877ad8cb63bd783adbd4f12961a8be6c06c92ab806cb7157dbe5c91.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/8d3f4fbb10879aae6520bc82514e23a19935f5e60b118e93d85ebba8defa417c.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "object-permanence",
+      "title": "OBJECT PERMANENCE",
+      "category": "3D / STILL",
+      "year": "2025",
+      "tools": [],
+      "archiveColor": "#B03A2E",
+      "thumbnail": "/images/archive-03-thumb.jpg",
+      "heroImage": "/images/archive-03-hero.jpg",
+      "ratio": "3/4",
+      "description": "A still-life series treating familiar objects as sculptural forms.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-03-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "low-orbit",
+      "title": "LOW ORBIT",
+      "category": "MOTION",
+      "year": "2024",
+      "tools": [],
+      "archiveColor": "#7C9C78",
+      "thumbnail": "/images/archive-04-thumb.jpg",
+      "heroImage": "/images/archive-04-hero.jpg",
+      "ratio": "3/4",
+      "description": "A personal motion study built around orbital paths and atmospheric depth.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-04-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "slug": "rollwith",
+      "title": "ROLLWITH",
+      "category": "3D / Branding",
+      "year": "2025",
+      "tools": [],
+      "archiveColor": "#7C9C78",
+      "thumbnail": "/cms/d5da0f210638d7fd6d1c43bcb129d6066a21da8087ea63168b7bd3cc8883f3d7.jpg",
+      "heroImage": "/cms/4c24b4559c8ff6d65c3bfc10a9cd867b1e4e20eeda70f6215353a0dfecbfa392.jpg",
+      "ratio": "3/4",
+      "description": "This is a fictional character design that captures a vibrant and sporty personality. Dynamic visuals emphasize its energetic and playful identity.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/cms/3deecf128aa8290fa4b17fa8689813a83b2f54803a088cec976beddb90bf908e.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/a0e3c20f6d861c788ab6a58e769f5a48cb8f0f351dad9840a138ae976c876d58.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        },
+        {
+          "type": "image",
+          "src": "/cms/11b2a92a8b2655839d5b6b4c3faaec7c5c3433518e49b4272552709e2aa626cd.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "quiet-machine",
+      "title": "QUIET MACHINE",
+      "category": "3D",
+      "year": "2024",
+      "tools": [],
+      "archiveColor": "#8C7BA5",
+      "thumbnail": "/images/archive-05-thumb.jpg",
+      "heroImage": "/images/archive-05-hero.jpg",
+      "ratio": "3/4",
+      "description": "Mechanical forms rendered without narrative — restraint, material, silence.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-05-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "slug": "field-notes",
+      "title": "FIELD NOTES",
+      "category": "EXPERIMENT",
+      "year": "2023",
+      "tools": [],
+      "archiveColor": "#D9C6E0",
+      "thumbnail": "/images/archive-06-thumb.jpg",
+      "heroImage": "/images/archive-06-hero.jpg",
+      "ratio": "3/4",
+      "description": "Daily motion studies made without a brief — texture, timing, type.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-06-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "afterimage",
+      "title": "AFTERIMAGE",
+      "category": "MOTION / 3D",
+      "year": "2023",
+      "tools": [],
+      "archiveColor": "#FF5B35",
+      "thumbnail": "/images/archive-07-thumb.jpg",
+      "heroImage": "/images/archive-07-hero.jpg",
+      "ratio": "3/4",
+      "description": "Layered afterimages of motion-captured gesture, rebuilt as 3D geometry.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-07-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "slug": "still-frame",
+      "title": "STILL FRAME",
+      "category": "3D / STILL",
+      "year": "2023",
+      "tools": [],
+      "archiveColor": "#2E8B67",
+      "thumbnail": "/images/archive-08-thumb.jpg",
+      "heroImage": "/images/archive-08-hero.jpg",
+      "ratio": "3/4",
+      "description": "A single-frame study of light falling across matte and reflective surfaces.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-08-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "slug": "signal-noise",
+      "title": "SIGNAL / NOISE",
+      "category": "EXPERIMENT",
+      "year": "2022",
+      "tools": [],
+      "archiveColor": "#E0C64D",
+      "thumbnail": "/images/archive-09-thumb.jpg",
+      "heroImage": "/images/archive-09-hero.jpg",
+      "ratio": "3/4",
+      "description": "Broadcast-signal artifacts treated as raw material for abstract motion.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-09-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "slug": "material-study",
+      "title": "MATERIAL STUDY",
+      "category": "3D / MOTION",
+      "year": "2022",
+      "tools": [],
+      "archiveColor": "#4D6B99",
+      "thumbnail": "/images/archive-10-thumb.jpg",
+      "heroImage": "/images/archive-10-hero.jpg",
+      "ratio": "3/4",
+      "description": "Cloth, liquid and glass simulations run side by side as a material vocabulary.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-10-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "slug": "counterweight",
+      "title": "COUNTERWEIGHT",
+      "category": "MOTION",
+      "year": "2023",
+      "tools": [],
+      "archiveColor": "#C4D93D",
+      "thumbnail": "/images/archive-11-thumb.jpg",
+      "heroImage": "/images/archive-11-hero.jpg",
+      "ratio": "3/4",
+      "description": "A personal study built around balance, tension and the moment before release.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-11-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "slug": "index-01",
+      "title": "INDEX 01",
+      "category": "3D / STILL",
+      "year": "2022",
+      "tools": [],
+      "archiveColor": "#A65D8E",
+      "thumbnail": "/images/archive-12-thumb.jpg",
+      "heroImage": "/images/archive-12-hero.jpg",
+      "ratio": "3/4",
+      "description": "The first entry in an ongoing archive of unreleased still-life renders.",
+      "content": [
+        {
+          "type": "image",
+          "src": "/images/archive-12-01.jpg",
+          "size": "full",
+          "ratio": "16/9"
+        }
+      ]
+    }
+  ]
+}
