@@ -1,23 +1,11 @@
-import { useState } from 'react'
+import Media from './Media.jsx'
 import { Link } from 'react-router-dom'
 
 function ArchiveTile({ item }) {
-  const [failed, setFailed] = useState(false)
-  const showImage = item.thumbnail && !failed
-
   return (
     <Link to={`/archive/${item.slug}`} className="archive-tile">
       <div className="archive-tile__layer archive-tile__layer--image">
-        {showImage ? (
-          <img
-            src={item.thumbnail}
-            alt={item.title}
-            loading="lazy"
-            onError={() => setFailed(true)}
-          />
-        ) : (
-          <div className="archive-tile__placeholder" />
-        )}
+        <Media src={item.thumbnail} alt={item.title} />
       </div>
 
       <div
