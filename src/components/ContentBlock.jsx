@@ -3,7 +3,7 @@ import {isEmbed,embedUrl} from '../../shared/content.mjs'
 
 // Renders one entry from a `content` array
 export default function ContentBlock({ block, title }) {
-  if (block.type === 'text') return <div className="grid project-detail__block"><p className="col-desktop-7 col-mobile-4 col-desktop-start-6" style={{whiteSpace:'pre-line'}}>{block.text}</p></div>
+  if (block.type === 'text') return <div className="grid project-detail__block"><p className={block.size==='full'?'col-desktop-12 col-mobile-4':'col-desktop-7 col-mobile-4 col-desktop-start-6'} style={{whiteSpace:'pre-line'}}>{block.text}</p></div>
   if (block.type === 'vimeo') {
     if (!isEmbed(block.url)) return null
     return (
