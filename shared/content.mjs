@@ -12,7 +12,7 @@ export function normalize(doc) {
     content: (item.content || []).map(block => {
       const type = block._type === 'portfolioBlock' ? block.type : block._type || block.type
       if (type === 'mediaBlock') return {type: 'image', src: mediaUrl(block.media), size: block.size || 'full', ratio: block.ratio || '16/9'}
-      if (type === 'textBlock' || type === 'text') return {type: 'text', text: block.text || ''}
+      if (type === 'textBlock' || type === 'text') return {type: 'text', text: block.text || '', size: block.size || 'medium'}
       if (type === 'vimeo') return {type: 'vimeo', url: embedUrl(block.url) || block.url}
       return {type: 'image', src: (type==='video' ? block.video?.asset?.url : block.image?.asset?.url) || block.src || block.legacySrc || '', size: block.size || 'full', ratio: block.ratio || '16/9'}
     }),
