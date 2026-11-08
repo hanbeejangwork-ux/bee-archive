@@ -77,7 +77,7 @@ export default function ContentEditor({value = [], onChange, readOnly}) {
             {player ? <iframe className="story-player" src={player} title={`영상 미리보기 ${i+1}`} allow="fullscreen; picture-in-picture" allowFullScreen/> : <p className="story-hint">일반 영상 주소를 붙여넣으면 여기에 재생 화면이 나와요.</p>}
           </> : src ? block.type === 'video' ? <video className="story-media" src={src} controls muted loop playsInline/> : <img className="story-media" src={src} alt={`상세 이미지 ${i+1}`} loading="lazy"/> : <p className="story-hint">미리보기 준비 중</p>}
           {block.type !== 'vimeo' && <div className="story-options"><label>표시 너비<select disabled={readOnly} value={block.size || 'full'} onChange={e => update(block._key,'size',e.target.value)}><option value="full">크게 · 전체 너비</option><option value="medium">작게 · 중간 너비</option></select></label>
-          {block.type !== 'text' && <label>이미지 비율<select disabled={readOnly} value={block.ratio || '16/9'} onChange={e => update(block._key,'ratio',e.target.value)}><option value="auto">원본 비율 · 자르지 않기</option>{['16/9','4/3','3/4','4/5','1/1'].map(r => <option key={r} value={r}>{r}</option>)}</select></label>}</div>}
+          {block.type !== 'text' && <span className="story-hint">상세 이미지는 원본 비율로 표시돼요.</span>}</div>}
         </div>
       </section>
     })}
