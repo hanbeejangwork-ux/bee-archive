@@ -5,21 +5,22 @@ export function mediaUrl(media, legacy = '') {
 export function normalize(doc) {
   if (!doc || !Array.isArray(doc.projects) || !Array.isArray(doc.archiveItems) || !doc.siteInfo) throw Error('게시 문서가 올바르지 않습니다.')
   if (typeof doc.siteInfo.name !== 'string' || typeof doc.siteInfo.homeIntro !== 'string') throw Error('사이트 이름과 홈 제목을 확인해주세요.')
+  const ordered = (items, order = []) => [...items].sort((a,b) => {const slug=x=>typeof x.slug==='string'?x.slug:x.slug?.current;const rank=x=>{const i=order.indexOf(slug(x));return i<0?order.length+items.indexOf(x):i};return rank(a)-rank(b)})
   const list = (items) => items.map((item, index) => ({
     ...item, slug: typeof item.slug === 'string' ? item.slug : item.slug?.current, id: String(index + 1).padStart(2, '0'), tools: item.tools || [],
-    thumbnail: mediaUrl(item.cover, item.thumbnailImage?.asset?.url || item.thumbnail || item.legacyThumbnail), heroImage: mediaUrl(item.hero, item.heroImageAsset?.asset?.url || item.heroImage || item.legacyHeroImage),
+    thumbnail: mediaUrl(item.cover, (item.thumbnailType==='video' ? item.thumbnailVideo?.asset?.url : '') || item.thumbnailImage?.asset?.url || item.thumbnail || item.legacyThumbnail), heroImage: mediaUrl(item.hero, (item.heroType==='video' ? item.heroVideo?.asset?.url : '') || item.heroImageAsset?.asset?.url || item.heroImage || item.legacyHeroImage),
     content: (item.content || []).map(block => {
       const type = block._type === 'portfolioBlock' ? block.type : block._type || block.type
       if (type === 'mediaBlock') return {type: 'image', src: mediaUrl(block.media), size: block.size || 'full', ratio: block.ratio || '16/9'}
       if (type === 'textBlock' || type === 'text') return {type: 'text', text: block.text || ''}
       if (type === 'vimeo') return {type: 'vimeo', url: block.url}
-      return {type: 'image', src: block.video?.asset?.url || block.image?.asset?.url || block.src || block.legacySrc || '', size: block.size || 'full', ratio: block.ratio || '16/9'}
+      return {type: 'image', src: (type==='video' ? block.video?.asset?.url : block.image?.asset?.url) || block.src || block.legacySrc || '', size: block.size || 'full', ratio: block.ratio || '16/9'}
     }),
   }))
   const result = {siteInfo: {...doc.siteInfo, navigation: doc.siteInfo.navigation || {home:'HOME',work:'WORK',archive:'ARCHIVE'},
     heroImage: mediaUrl(doc.siteInfo.hero, doc.siteInfo.heroImageAsset?.asset?.url || doc.siteInfo.heroImage || doc.siteInfo.legacyHeroImage),
     aboutHeroImage: mediaUrl(doc.siteInfo.aboutHero, doc.siteInfo.aboutHeroImageAsset?.asset?.url || doc.siteInfo.aboutHeroImage || doc.siteInfo.legacyAboutHeroImage)},
-    projects: list(doc.projects), archiveItems: list(doc.archiveItems)}
+    projects: list(ordered(doc.projects,doc.order?.work)), archiveItems: list(ordered(doc.archiveItems,doc.order?.archive))}
   for (const items of [result.projects, result.archiveItems]) {
     const slugs = new Set()
     for (const item of items) {
