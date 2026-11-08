@@ -1,5 +1,5 @@
 import ImageFrame from './ImageFrame.jsx'
-import {isEmbed} from '../../shared/content.mjs'
+import {isEmbed,embedUrl} from '../../shared/content.mjs'
 
 // Renders one entry from a `content` array
 export default function ContentBlock({ block, title }) {
@@ -11,7 +11,7 @@ export default function ContentBlock({ block, title }) {
         <div className="col-desktop-12 col-mobile-4">
           <div className="video-frame">
             <iframe
-              src={block.url}
+              src={embedUrl(block.url)}
               title={`${title} video`}
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
