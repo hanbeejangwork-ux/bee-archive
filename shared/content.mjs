@@ -13,7 +13,7 @@ export function normalize(doc) {
       const type = block._type === 'portfolioBlock' ? block.type : block._type || block.type
       if (type === 'mediaBlock') return {type: 'image', src: mediaUrl(block.media), size: block.size || 'full', ratio: block.ratio || '16/9'}
       if (type === 'textBlock' || type === 'text') return {type: 'text', text: block.text || ''}
-      if (type === 'vimeo') return {type: 'vimeo', url: block.url}
+      if (type === 'vimeo') return {type: 'vimeo', url: embedUrl(block.url) || block.url}
       return {type: 'image', src: (type==='video' ? block.video?.asset?.url : block.image?.asset?.url) || block.src || block.legacySrc || '', size: block.size || 'full', ratio: block.ratio || '16/9'}
     }),
   }))
@@ -34,6 +34,24 @@ export function normalize(doc) {
   }
   return result
 }
-export function isEmbed(value) {
-  try { const u = new URL(value); return u.protocol === 'https:' && ((u.hostname === 'player.vimeo.com' && /^\/video\/\d+$/.test(u.pathname)) || (u.hostname === 'www.youtube-nocookie.com' && /^\/embed\/[\w-]+$/.test(u.pathname))) } catch { return false }
+export function embedUrl(value) {
+  try {
+    const u = new URL(value)
+    if (u.protocol !== 'https:' && u.protocol !== 'http:') return null
+    if (u.hostname === 'player.vimeo.com' && /^\/video\/\d+$/.test(u.pathname)) {u.protocol='https:';return u.href}
+    if (['vimeo.com','www.vimeo.com'].includes(u.hostname) && /^\/\d+(?:\/[a-zA-Z0-9]+)?\/?$/.test(u.pathname)) {
+      const [,id,hash]=u.pathname.split('/');return `https://player.vimeo.com/video/${id}${hash?'?h='+encodeURIComponent(hash):''}`
+    }
+    let id
+    if (u.hostname === 'youtu.be') id=u.pathname.slice(1).split('/')[0]
+    else if (['youtube.com','www.youtube.com','m.youtube.com','www.youtube-nocookie.com'].includes(u.hostname)) {
+      id = u.pathname === '/watch' ? u.searchParams.get('v') : u.pathname.match(/^\/(?:embed|shorts|live)\/([\w-]+)\/?$/)?.[1]
+    }
+    if (!id || !/^[\w-]{6,}$/.test(id)) return null
+    const start=u.searchParams.get('start') || u.searchParams.get('t')
+    const match=start?.match(/^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/)
+    const seconds=/^\d+$/.test(start || '')?Number(start):match?Number(match[1]||0)*3600+Number(match[2]||0)*60+Number(match[3]||0):0
+    return `https://www.youtube-nocookie.com/embed/${id}${seconds?'?start='+seconds:''}`
+  } catch {return null}
 }
+export function isEmbed(value) {return !!embedUrl(value)}
